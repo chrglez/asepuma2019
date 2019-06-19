@@ -1,0 +1,40 @@
+.title-slide {
+  background-image: url("img/logo.png");
+  background-position: 9% 15%;
+  background-size: 255px;
+  background-color: #fff;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+tr:nth-child(even) { background: #eee }
+
+
+.kable-table {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 20px;
+  max-height: 350px;
+}
+
+.kable-table table {
+  margin-bottom: 0px;
+}
+
+.kable-table table>thead>tr>th {
+  border: none;
+  border-bottom: 2px solid #dddddd;
+}
+
+.kable-table table>thead {
+  background-color: #fff;
+}
