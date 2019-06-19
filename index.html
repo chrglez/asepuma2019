@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
   <head>
     <title>Las victorias fuera de casa en fútbol</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="author" content="N. Dávila Cárdenes, J.M. Pérez Sánchez, E. Gómez Déniz, C. González-Martel" />
     <link href="libs/remark-css-0.0.1/rutgers.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/rutgers-fonts.css" rel="stylesheet" />
@@ -45,7 +45,7 @@ class:  inverse, center, middle
 
 2. [Objetivos](#2objetivos)
 
-3. Metodología
+3. [Metodología](#3metodologia)
 
 4. [Descripción de los datos](#4datos)
 
@@ -117,6 +117,7 @@ name: 2objetivos
 
 ---
 class:  inverse, center, middle
+name: 3metodologia
 
 # 3. Metodología.
 
@@ -140,7 +141,7 @@ class:  inverse, center, middle
 `$$\begin{array}{rcl}\mathcal{L}_t(\beta)&amp;=&amp;log\left(\frac{p_t}{1-p_t}\right)=x'_t\beta,\qquad t=1,2,\ldots,n.\\\beta&amp;\sim&amp;\pi(\beta)\end{array}$$`
 ---
 background-image: url("img/G2_mod.jpg")
-background-position: center
+background-position: center bottom
 background-size: 50%
 
 ## Modelo Bayesiano asimétrico
@@ -180,7 +181,7 @@ name: 4datos
   &lt;/tr&gt;
  &lt;/thead&gt;
 &lt;tbody&gt;
-  &lt;tr grouplength="9"&gt;&lt;td colspan="2" style="border-bottom: 1px solid;"&gt;&lt;strong&gt;Estadísticas de juego&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr grouplength="9"&gt;&lt;td colspan="2" style="background-color: #666; color: #fff;"&gt;&lt;strong&gt;Estadísticas de juego&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;
    &lt;td style="text-align:left; padding-left: 2em;" indentlevel="1"&gt; HS &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; Tiros a puerta equipo local &lt;/td&gt;
@@ -217,12 +218,12 @@ name: 4datos
    &lt;td style="text-align:left; padding-left: 2em;" indentlevel="1"&gt; AR &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; Tarjetas rojas equipo visitante &lt;/td&gt;
   &lt;/tr&gt;
-  &lt;tr grouplength="1"&gt;&lt;td colspan="2" style="border-bottom: 1px solid;"&gt;&lt;strong&gt;Partido&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr grouplength="1"&gt;&lt;td colspan="2" style="background-color: #666; color: #fff;"&gt;&lt;strong&gt;Partido&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;
    &lt;td style="text-align:left; padding-left: 2em;" indentlevel="1"&gt; DERBY &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; Partido jugado entre equipos de la misma ciudad, región o frente a los equipos más fuertes de la liga &lt;/td&gt;
   &lt;/tr&gt;
-  &lt;tr grouplength="2"&gt;&lt;td colspan="2" style="border-bottom: 1px solid;"&gt;&lt;strong&gt;No pertenecientes al juego&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr grouplength="2"&gt;&lt;td colspan="2" style="background-color: #666; color: #fff;"&gt;&lt;strong&gt;No pertenecientes al juego&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;
    &lt;td style="text-align:left; padding-left: 2em;" indentlevel="1"&gt; BUDH &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; Presupuesto equipo local &lt;/td&gt;
@@ -231,7 +232,7 @@ name: 4datos
    &lt;td style="text-align:left; padding-left: 2em;" indentlevel="1"&gt; BUDA &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; Presupuesto equipo visitante &lt;/td&gt;
   &lt;/tr&gt;
-  &lt;tr grouplength="2"&gt;&lt;td colspan="2" style="border-bottom: 1px solid;"&gt;&lt;strong&gt;Árbitro&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr grouplength="2"&gt;&lt;td colspan="2" style="background-color: #666; color: #fff;"&gt;&lt;strong&gt;Árbitro&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;
    &lt;td style="text-align:left; padding-left: 2em;" indentlevel="1"&gt; INTERNATIONAL &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; Experiencia internacional &lt;/td&gt;
@@ -243,7 +244,6 @@ name: 4datos
 &lt;/tbody&gt;
 &lt;/table&gt;
 
----
 
 
 
@@ -459,7 +459,7 @@ name: 5resultados
    &lt;td style="text-align:left;"&gt; 0.009 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; delta &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; `$$\delta$$` &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
@@ -509,7 +509,174 @@ name: 5resultados
 &lt;/tbody&gt;
 &lt;/table&gt;
 ---
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 11px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="border-bottom:hidden" colspan="1"&gt;&lt;/th&gt;
+&lt;th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Logit&lt;/div&gt;&lt;/th&gt;
+&lt;th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Bayesiano&lt;/div&gt;&lt;/th&gt;
+&lt;th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Bayesiano Asimétrico&lt;/div&gt;&lt;/th&gt;
+&lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Variables &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; `$$\hat{\beta_l}$$` &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Robust Sd &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; p-Value &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; `$$\hat{\beta_b}$$` &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Sd b &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; MC Error b &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; `$$\hat{\beta_{ba}}$$` &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Sd ba &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; MC Error ba &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Intercept &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; --0.985 *** &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.131 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; --1.231 *** &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.225 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 11.55 *** &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.859 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.131 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; AS &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.158 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.131 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.227 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.156 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.135 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.63 *** &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.381 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.039 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; HR &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.494 *** &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.115 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.517 *** &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.115 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 5.542 *** &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.763 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.063 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; BUDH &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; --0.578 ** &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.228 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.011 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; --0.641 *** &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.23 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; --3.119 *** &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.992 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.03 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; BUDA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.409 *** &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.127 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.001 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.423 *** &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.126 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.571 *** &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.79 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.057 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; INTERNATIONAL &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.327 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.262 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.715 * &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.13 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.06 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; delta &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; --33.19 *** &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 7.125 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.335 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; AIC &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 420.119 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 426.7 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 67.43 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; DIC &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 410.119 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 420.75 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 108.105 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; \% Correct Fitting &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 72.89 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 70 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 100 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+class:  inverse, center, middle
+name: 5conclusiones
+
+# 5. Conclusiones.
+
+---
+
+- Se presenta modelo logit asimétrico que estudia cuales son los factores determinantes e una victoria fuera de casa.
+
+- Permite al estamento directivo del equipo disponer de una herramienta que detecte los factores potenciales para las victorias fuera de casa.
+
+- La asimetría de debe ser incluida dentro del modelo logit.
+
+---
+
+
+class:  inverse, center, middle
+
+# Las victorias fuera de casa en fútbol:un modelo bayesiano
     </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script src="js/ru_xaringan.js"></script>
 <script>var slideshow = remark.create({
@@ -521,16 +688,57 @@ name: 5resultados
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
-(function() {
-  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
   if (!r) return;
   s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
   d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
 })();</script>
 
 <script>
 (function() {
-  var i, text, code, codes = document.getElementsByTagName('code');
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
   for (i = 0; i < codes.length;) {
     code = codes[i];
     if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
@@ -544,7 +752,8 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     i++;
   }
-})();
+};
+slideshow._releaseMath(document);
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

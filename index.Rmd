@@ -32,7 +32,7 @@ class:  inverse, center, middle
 
 2. [Objetivos](#2objetivos)
 
-3. Metodología
+3. [Metodología](#3metodologia)
 
 4. [Descripción de los datos](#4datos)
 
@@ -104,6 +104,7 @@ name: 2objetivos
 
 ---
 class:  inverse, center, middle
+name: 3metodologia
 
 # 3. Metodología.
 
@@ -138,7 +139,7 @@ text(-5,0.9,parse(text = TeX('$f(x)=\\frac{1}{1+e^{-x\\beta}}$')))
 $$\begin{array}{rcl}\mathcal{L}_t(\beta)&=&log\left(\frac{p_t}{1-p_t}\right)=x'_t\beta,\qquad t=1,2,\ldots,n.\\\beta&\sim&\pi(\beta)\end{array}$$
 ---
 background-image: url("img/G2_mod.jpg")
-background-position: center
+background-position: center bottom
 background-size: 50%
 
 ## Modelo Bayesiano asimétrico
@@ -195,14 +196,13 @@ tabla1 <- data.frame(
 tabla1 %>%
   kable('html') %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 11) %>%
-  pack_rows("Estadísticas de juego", 1, 9) %>%
-  pack_rows("Partido", 10, 10) %>%
-  pack_rows('No pertenecientes al juego',11,12) %>%
-  pack_rows('Árbitro',13,14)
+  pack_rows("Estadísticas de juego", 1, 9,label_row_css = "background-color: #666; color: #fff;") %>%
+  pack_rows("Partido", 10, 10, label_row_css = "background-color: #666; color: #fff;") %>%
+  pack_rows('No pertenecientes al juego',11,12, label_row_css = "background-color: #666; color: #fff;") %>%
+  pack_rows('Árbitro',13,14, label_row_css = "background-color: #666; color: #fff;")
   
 ```
 
----
 
 
 
@@ -226,8 +226,49 @@ tabla2 <- readr::read_csv('tabla2.csv', col_names = FALSE)
   kable('html') %>%
    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 11) %>%
    add_header_above(c(" " = 1, "Logit" = 3, "Bayesiano" = 3, "Bayesiano Asimétrico" = 3))
+   
+   
 
 
    
 ```
 ---
+
+```{r, message = FALSE, echo = FALSE}
+tabla3 <- readr::read_csv('tabla3.csv', col_names = FALSE)
+
+
+ tabla3 %>%
+  setNames(c('Variables','$$\\hat{\\beta_l}$$', 'Robust Sd' , 'p-Value' , '$$\\hat{\\beta_b}$$' , 'Sd b' , 'MC Error b' , '$$\\hat{\\beta_{ba}}$$' , 'Sd ba' ,'MC Error ba')) %>%
+   mutate_if(is.numeric, as.character) %>%
+  
+  kable('html') %>%
+   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 11) %>%
+   add_header_above(c(" " = 1, "Logit" = 3, "Bayesiano" = 3, "Bayesiano Asimétrico" = 3))
+   
+   
+
+
+   
+```
+
+---
+class:  inverse, center, middle
+name: 5conclusiones
+
+# 5. Conclusiones.
+
+---
+
+- Se presenta modelo logit asimétrico que estudia cuales son los factores determinantes e una victoria fuera de casa.
+
+- Permite al estamento directivo del equipo disponer de una herramienta que detecte los factores potenciales para las victorias fuera de casa.
+
+- La asimetría de debe ser incluida dentro del modelo logit.
+
+---
+
+
+class:  inverse, center, middle
+
+# Las victorias fuera de casa en fútbol:un modelo bayesiano
