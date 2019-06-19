@@ -194,13 +194,17 @@ tabla1 <- data.frame(
 )
 tabla1 %>%
   kable('html') %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 9) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 11) %>%
   pack_rows("Estadísticas de juego", 1, 9) %>%
   pack_rows("Partido", 10, 10) %>%
   pack_rows('No pertenecientes al juego',11,12) %>%
   pack_rows('Árbitro',13,14)
   
 ```
+
+---
+
+
 
 ---
 class:  inverse, center, middle
@@ -212,15 +216,18 @@ name: 5resultados
 
 ---
 ```{r, message = FALSE, echo = FALSE}
-tabla2 <- readr::read_csv('tabla2.csv', col_names = FALSE) %>%
-  select(-X7)
+tabla2 <- readr::read_csv('tabla2.csv', col_names = FALSE)
 
- tabla2%>%
-  setNames(c('$$\\hat{\\beta_l}$$', 'Robust Sd' , 'p-Value' , '$$\\hat{\\beta_b}$$' , 'Sd b' , 'MC Error b' , '$$\\hat{\\beta_{ba}}$$' , 'Sd ba' ,'MC Error ba')) %>%
+
+ tabla2 %>%
+  setNames(c('Variables','$$\\hat{\\beta_l}$$', 'Robust Sd' , 'p-Value' , '$$\\hat{\\beta_b}$$' , 'Sd b' , 'MC Error b' , '$$\\hat{\\beta_{ba}}$$' , 'Sd ba' ,'MC Error ba')) %>%
    mutate_if(is.numeric, as.character) %>%
   
   kable('html') %>%
-   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 11) %>%
+   add_header_above(c(" " = 1, "Logit" = 3, "Bayesiano" = 3, "Bayesiano Asimétrico" = 3))
+
+
    
 ```
 ---
